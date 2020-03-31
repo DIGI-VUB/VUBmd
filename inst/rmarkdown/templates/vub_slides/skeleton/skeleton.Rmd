@@ -1,0 +1,102 @@
+--- 
+title: "Show VUBmd package"
+author: "Your name: your.name@vub.be"
+output:
+  VUBmd::vub_slides:
+    subtitle: "Ik wil meer van dit"
+    location: "DIGI - VUB - Brussels"
+    toc: true
+    toc_name: "Inhoudstabel"
+    slide_level: 2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, error = TRUE, message = FALSE, comment = NA, size = "scriptsize")
+```
+
+# HOOFD 1
+
+## Gewoon wat slides
+
+- Som wat op
+   - Ga maar door
+   - *Ga maar door*
+- Som wat op      
+- **TEST VET**
+   1. ABC
+       - BOE
+       - *BA*
+   2. *XYZ*
+   
+> Martin Luther King: I have a dream that my four little children will one day live in a nation where they will not be judged by the color of their skin, but by the content of their character.
+
+
+
+## Niveau twee
+
+- abc, *xyz*, **bibaboe**
+- abc, *xyz*, **bibaboe**
+
+### Niveau drie
+
+- abc, *xyz*, **bibaboe**
+- abc, *xyz*, **bibaboe**
+
+### Niveau drie
+
+
+# R code
+
+## Voorbeeld  
+
+- R code 
+
+```{r}
+x <- rnorm(n = 500)
+x <- cumsum(x)
+str(x)
+``` 
+
+- x bevat `r length(x)` elementen
+- Tabel voorbeeld:
+
+
+```{r}
+library(knitr)
+df <- data.frame(a = 1:2, b = c("Just", "Example table"))
+kable(df)
+``` 
+
+## Grafieken
+
+- Plots
+
+```{r, out.width="0.7\\textwidth", fig.align="center"}
+plot(x, type = "s")
+```
+
+## 
+
+```{r}
+hist(x, breaks = "scott", 
+     col = "lightblue", border = "white")
+
+```
+
+# Fotos
+
+## Example
+
+- Include an image `imgexample.jpg` which is in your img folder as follows
+
+```{r, eval=FALSE}
+knitr::include_graphics("img/imgexample.jpg")
+```
+
+- This gives
+
+```{r echo=FALSE, out.width="0.5\\textwidth", fig.align="center"}
+knitr::include_graphics(system.file(package = "VUBmd", "extdata", "imgexample.jpg"))
+```  
+
+

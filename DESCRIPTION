@@ -1,0 +1,19 @@
+Package: VUBmd
+Type: Package
+Title: Markdown Templates for VUB
+Version: 0.1.0
+Authors@R: c(
+  person('Jan', 'Wijffels', role = c('aut', 'cre', 'cph'), email = 'jan.wijffels@vub.be'),
+  person("Thierry Onkelinx, Floris Vanderhaeghe and Research Institute for Nature and Forest", role = c('ctb', 'cph'), comment = "INBOmd authors: https://github.com/inbo/INBOmd"),
+  person("Ruben De Smet", role = c('ctb', 'cph'), comment = "texlive-vub authors: https://gitlab.com/rubdos/texlive-vub"))
+Description: Templates to generate articles and presentations using markdown and R alongside the VUB Latex templates. 
+    The work was based on the following resources: <https://github.com/inbo/INBOmd> and <https://gitlab.com/rubdos/texlive-vub>.
+License: file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+VignetteBuilder: knitr
+Suggests: 
+  knitr
+Imports: 
+  rmarkdown

@@ -1,0 +1,40 @@
+---
+title: "VUBmd"
+author: "Jan Wijffels"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: false
+vignette: >
+  %\VignetteIndexEntry{VUBmd}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+```{r setup, include=FALSE, cache=FALSE}
+options(width = 1000)
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, comment = NA, eval = TRUE)
+```
+
+## VUBmd
+
+The package allows you to easily create using Rmarkdown
+
+- presentations with the identity of the VUB
+- articles with the identity of the VUB
+
+To get started either in RStudio, select the VUB templates (`VUB slides` and `VUB article`) at
+`File` > `New file` > `R Markdown` > `From template`. Or just copy-paste the examples to your current working directory and start creating a presentation or an article.
+
+```{r, eval=FALSE}
+rmd <- system.file(package = "VUBmd", "rmarkdown", "templates", "vub_slides", "skeleton", "skeleton.Rmd")
+file.copy(rmd, "vub-slides.Rmd")
+``` 
+
+```{r, eval=FALSE}
+rmd <- system.file(package = "VUBmd", "rmarkdown", "templates", "vub_article", "skeleton", "skeleton.Rmd")
+file.copy(rmd, "vub-article.Rmd")
+```  
+
+
