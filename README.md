@@ -44,6 +44,8 @@ tinytex::tlmgr_install('helvetic')
 tinytex::tlmgr_install('dvips')
 tinytex::tlmgr_install('hyphen-dutch')
 tinytex::tlmgr_install('hyphen-french')
+tinytex::tlmgr_install('setspace')
+tinytex::tlmgr_install('relsize')
 tinytex::tlmgr_conf(c("auxtrees", "add", system.file("local_tex", package = "VUBmd")))
 ```
 
