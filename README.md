@@ -48,6 +48,7 @@ tinytex::tlmgr_install('setspace')
 tinytex::tlmgr_install('relsize')
 tinytex::tlmgr_install('float')
 tinytex::tlmgr_install('longtable')
+tinytex::tlmgr_install('lscape')
 tinytex::tlmgr_conf(c("auxtrees", "add", system.file("local_tex", package = "VUBmd")))
 ```
 
