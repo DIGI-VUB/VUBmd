@@ -36,7 +36,7 @@ remotes::install_github("DIGI-VUB/VUBmd")
 4. Once the VUBmd R package is installed, you need to make sure the local_tex folder inside the VUBmd R package is used in tinytex. This is done as follows.
 
 ```{r}
-tinytex::tlmgr_install('tex-gyre'))
+tinytex::tlmgr_install('tex-gyre')
 tinytex::tlmgr_install('inconsolata')
 tinytex::tlmgr_install('times')
 tinytex::tlmgr_install('tex')
@@ -49,6 +49,8 @@ tinytex::tlmgr_install('relsize')
 tinytex::tlmgr_install('float')
 tinytex::tlmgr_install('longtable')
 tinytex::tlmgr_install('lscape')
+tinytex::tlmgr_install('xcolor')
+tinytex::tlmgr_install('soul')
 tinytex::tlmgr_conf(c("auxtrees", "add", system.file("local_tex", package = "VUBmd")))
 ```
 
