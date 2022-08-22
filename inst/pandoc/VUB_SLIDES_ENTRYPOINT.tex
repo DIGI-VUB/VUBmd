@@ -5,6 +5,10 @@
 
 \def\codesize#1{\def\@codesize{#1}}
 \codesize{\normalsize}
+%\codesize{\scriptsize}
+$if(codesize)$
+\codesize{\$codesize$}
+$endif$
 
 % required for the Euro symbol
 \RequirePackage[gen]{eurosym}

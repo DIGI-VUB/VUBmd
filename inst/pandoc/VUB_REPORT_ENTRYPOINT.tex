@@ -27,6 +27,10 @@
 
 \def\codesize#1{\def\@codesize{#1}}
 \codesize{\normalsize}
+%\codesize{\scriptsize}
+$if(codesize)$
+\codesize{\$codesize$}
+$endif$
 
 % required for the Euro symbol
 \RequirePackage[gen]{eurosym}
@@ -87,9 +91,6 @@
 \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{{#1}}}
 \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{{#1}}}
 
-$if(codesize)$
-\codesize{\$codesize$}
-$endif$
 
 $if(floatbarriersection)$
 \makeatletter
